@@ -7,6 +7,132 @@ All notable changes to the Misaka Network project are documented here.
 
 ---
 
+## [2.35.0](https://github.com/Ikalus1988/MisakaNet/compare/v2.34.0...v2.35.0) (2026-09-23)
+
+
+### Features
+
+* **bounty:** the claim rule enforced, because prose did not enforce it ([#2043](https://github.com/Ikalus1988/MisakaNet/issues/2043)) ([#2052](https://github.com/Ikalus1988/MisakaNet/issues/2052)) ([a6a2e71](https://github.com/Ikalus1988/MisakaNet/commit/a6a2e71e54f9afae7573aac7be18c0567239964d))
+* **field-reports:** the evidence rules now have teeth ([#2042](https://github.com/Ikalus1988/MisakaNet/issues/2042)) ([#2051](https://github.com/Ikalus1988/MisakaNet/issues/2051)) ([65a5a40](https://github.com/Ikalus1988/MisakaNet/commit/65a5a40631bb4b4b62dbc4bdbb65d306ed31be36))
+* **intake:** a case harness for the conversion receipt ([#1528](https://github.com/Ikalus1988/MisakaNet/issues/1528)) ([f76c23d](https://github.com/Ikalus1988/MisakaNet/commit/f76c23d210d6b4383c452cba6bcc7bccc3639bae))
+* **intake:** case harness for the conversion receipt ([#1528](https://github.com/Ikalus1988/MisakaNet/issues/1528)) ([96e9c74](https://github.com/Ikalus1988/MisakaNet/commit/96e9c7441074171b07eb5e99793bd71745c130dd))
+* **intake:** detect intakes whose work is already merged but whose issue is still open ([a6923ea](https://github.com/Ikalus1988/MisakaNet/commit/a6923ea31c111c54c1e3cc3c800c8eb9c74e5974))
+* **intake:** detect intakes whose work is already merged but whose issue is still open ([fd1bbca](https://github.com/Ikalus1988/MisakaNet/commit/fd1bbcaf3a731850af781fa09e37705a1a7e104b)), closes [#2040](https://github.com/Ikalus1988/MisakaNet/issues/2040)
+* **lessons:** three intakes from the backlog, written from the corpus search ([#2021](https://github.com/Ikalus1988/MisakaNet/issues/2021)) ([3c2dd14](https://github.com/Ikalus1988/MisakaNet/commit/3c2dd14d4d3810ed79284acab2bf07eac053fd3a)), closes [#1130](https://github.com/Ikalus1988/MisakaNet/issues/1130) [#1145](https://github.com/Ikalus1988/MisakaNet/issues/1145) [#1146](https://github.com/Ikalus1988/MisakaNet/issues/1146)
+* **metrics:** finish roadmap milestone ② — hit/miss table with the topic split ([21edbe0](https://github.com/Ikalus1988/MisakaNet/commit/21edbe089910dda973bb781bd9b1dbc6f1869da3))
+* **metrics:** finish roadmap milestone ② — the hit/miss table, with the topic split ([dbea063](https://github.com/Ikalus1988/MisakaNet/commit/dbea063601c4d9641b3cf548658204583c7c9691))
+* **tools:** compare the two search implementations over one query set ([#2121](https://github.com/Ikalus1988/MisakaNet/issues/2121)) ([6868b6b](https://github.com/Ikalus1988/MisakaNet/commit/6868b6b3941d5bd17253f3d212176eb84547c53e))
+* **tools:** compare the two search implementations over one query set ([#2121](https://github.com/Ikalus1988/MisakaNet/issues/2121)) ([a1abb31](https://github.com/Ikalus1988/MisakaNet/commit/a1abb31361049065a2105f2819c45a55b6d2f03f))
+
+
+### Bug Fixes
+
+* **bench:** the fixture whose job is to time out must not hang the runner ([2d90225](https://github.com/Ikalus1988/MisakaNet/commit/2d90225e8371b3b28c236b7cbc3475ee4f17f96a))
+* **bench:** the fixture whose job is to time out must not hang the runner ([da4b8cc](https://github.com/Ikalus1988/MisakaNet/commit/da4b8ccb2739ef517a9dec4a7420399bae65bc9a))
+* **ci:** give the cross-platform legs failures that mean something ([#2018](https://github.com/Ikalus1988/MisakaNet/issues/2018)) ([5e82f93](https://github.com/Ikalus1988/MisakaNet/commit/5e82f9384694ad7a90b446085dde94de82a57984))
+* **ci:** make the cross-platform legs fail for reasons that are real ([#2018](https://github.com/Ikalus1988/MisakaNet/issues/2018)) ([4c44dd7](https://github.com/Ikalus1988/MisakaNet/commit/4c44dd7be23deb6cbced79d1e31b9f1bf5c2896b))
+* **ci:** stop superseded matrix runs from holding runners ([bbc2f4c](https://github.com/Ikalus1988/MisakaNet/commit/bbc2f4cd28e72e401300b05ec69a19378c18a781))
+* **ci:** stop superseded matrix runs from holding runners ([9260eef](https://github.com/Ikalus1988/MisakaNet/commit/9260eef5fa08088b36661ccceb6994bc261ad54d))
+* **ci:** the automated writers land through a pull request that merges itself ([0b733d9](https://github.com/Ikalus1988/MisakaNet/commit/0b733d9649d83ad7f440c86b367ed9f34ee35005))
+* **ci:** the automated writers land through a pull request that merges itself ([2061a49](https://github.com/Ikalus1988/MisakaNet/commit/2061a49fffeddbd3d079993be6d38d939c1282f2))
+* **d1:** the served trust field carries the level the corpus publishes ([8938a96](https://github.com/Ikalus1988/MisakaNet/commit/8938a9654e115beb39a584bd728d7b3390e7cabb))
+* **d1:** the served trust field carries the level the corpus publishes ([#2080](https://github.com/Ikalus1988/MisakaNet/issues/2080)) ([9645010](https://github.com/Ikalus1988/MisakaNet/commit/9645010b70561fd772878ca6c957e427d86efdd2))
+* **installer:** macOS one-liner was broken, and the cross-platform legs need a time bound ([1b054a1](https://github.com/Ikalus1988/MisakaNet/commit/1b054a172fb00298a19b9a79f8f886180bc7488e))
+* **installer:** the one-liner was broken on macOS, and the legs had no time bound ([5760487](https://github.com/Ikalus1988/MisakaNet/commit/576048707190f164fc60446c7bfca332eac03ba7))
+* **intake:** a citation needs a shape, not just digits — three of four "done but open" intakes were artifacts ([a81bcd4](https://github.com/Ikalus1988/MisakaNet/commit/a81bcd401704d607c5d30982a1f395ccab01c859))
+* **intake:** a citation needs a shape, not just digits — three of four "done but open" intakes were artifacts ([ae6a7ab](https://github.com/Ikalus1988/MisakaNet/commit/ae6a7ab7aa00548a57603b02a431070fb73b4294))
+* **register:** the registration job stops writing a number it does not own ([463ba58](https://github.com/Ikalus1988/MisakaNet/commit/463ba58c8514996e3ded5c4adbd34cae30164043))
+* **register:** the registration job stops writing a number it does not own ([b6e13bd](https://github.com/Ikalus1988/MisakaNet/commit/b6e13bde12580b3985b038b783ac1e42a824d807))
+* **search:** the index must carry the bodies, and answers must carry the trust field ([51de5bd](https://github.com/Ikalus1988/MisakaNet/commit/51de5bd21653c0ba361d8f4d4c395d6dfd32c6bd))
+* **search:** the index must carry the bodies, and answers must carry the trust field ([851d2c7](https://github.com/Ikalus1988/MisakaNet/commit/851d2c74b02aad72d4bd22c30a75d2689fba7b48))
+* **search:** the user's words decide the order, not the alias expansion ([7c615cc](https://github.com/Ikalus1988/MisakaNet/commit/7c615ccfb7e76e8f8cd01579ecfd1bad4205f8da))
+* **search:** the user's words decide the order, not the alias expansion ([#2079](https://github.com/Ikalus1988/MisakaNet/issues/2079)) ([c8030b3](https://github.com/Ikalus1988/MisakaNet/commit/c8030b3e7012684343876a1543e58cae1e703e78))
+* **security:** the authenticated write path gets the two guards the anonymous one already had ([#2081](https://github.com/Ikalus1988/MisakaNet/issues/2081)) ([a44677f](https://github.com/Ikalus1988/MisakaNet/commit/a44677f70e35a0f758c8721d93a54bd80f58695c))
+* **site:** count registrations as registrations, and take the client list from the installers ([ea2944c](https://github.com/Ikalus1988/MisakaNet/commit/ea2944cafb1ebbafd867038c3c7a6f5428dd209d))
+* **site:** count registrations as registrations, and take the client list from the installers ([b34c995](https://github.com/Ikalus1988/MisakaNet/commit/b34c99519a59ddca72cb50deac5d684b2c7c44f4))
+* **tooling:** the lesson writer created unreadable lessons, and the freshness parser could not read them ([8d74771](https://github.com/Ikalus1988/MisakaNet/commit/8d7477198f51e4775b96e8d8eecd07b62bea9717))
+* **tooling:** the lesson writer created unreadable lessons, and the freshness parser could not read them ([9d14553](https://github.com/Ikalus1988/MisakaNet/commit/9d145538701f9535379cd50b60aa1ff79773d301)), closes [#1922](https://github.com/Ikalus1988/MisakaNet/issues/1922) [#1775](https://github.com/Ikalus1988/MisakaNet/issues/1775)
+* **windows:** the 16 failures, and the three product bugs behind them ([f1c6f5f](https://github.com/Ikalus1988/MisakaNet/commit/f1c6f5fa93c05410f6aba497c5c147c5db01345d))
+* **windows:** the 16 failures, and the three product bugs behind them ([5ab7a4a](https://github.com/Ikalus1988/MisakaNet/commit/5ab7a4a64f3f9739c216512886a9a3a42330b81e))
+* **worker:** analytics stop spending the KV write budget ([#1890](https://github.com/Ikalus1988/MisakaNet/issues/1890)) ([41d4268](https://github.com/Ikalus1988/MisakaNet/commit/41d42685e37f9e059ee956842a1f054473cd20c6))
+* **worker:** analytics stop spending the KV write budget ([#1890](https://github.com/Ikalus1988/MisakaNet/issues/1890)) ([accb2a3](https://github.com/Ikalus1988/MisakaNet/commit/accb2a3e381024946cf8b86ade0537f83e06a7d5))
+* **worker:** every outbound call gets a deadline — the 504s are the worker waiting on a stalled fetch ([3f57279](https://github.com/Ikalus1988/MisakaNet/commit/3f572791504a53d9b10b4ad4e6966911540d7440))
+* **worker:** every outbound call gets a deadline — the 504s are the worker waiting on a stalled fetch ([0b25fbe](https://github.com/Ikalus1988/MisakaNet/commit/0b25fbe528dfde03dcf710a048cc569172e817cb))
+* **worker:** the monthly traffic total becomes a counters row — the key had no reader ([b993879](https://github.com/Ikalus1988/MisakaNet/commit/b9938799b3e653f1520901a2f2a86d2436a0687a))
+* **worker:** the monthly traffic total becomes a counters row — the key had no reader ([#2120](https://github.com/Ikalus1988/MisakaNet/issues/2120)) ([1362444](https://github.com/Ikalus1988/MisakaNet/commit/1362444f81049a5d60b94f21332eb1218a822cca))
+* **worker:** the per-address rate limits leave KV, and the store gets a reclaimer ([eef0f1b](https://github.com/Ikalus1988/MisakaNet/commit/eef0f1b91fcf17dd013e0fb9bd5f14bef772a35b))
+* **worker:** the per-address rate limits leave KV, and the store gets a reclaimer ([#2117](https://github.com/Ikalus1988/MisakaNet/issues/2117)) ([7e72d31](https://github.com/Ikalus1988/MisakaNet/commit/7e72d313fb7b064373dde02e8b2a4933e74714da))
+* **worker:** the per-event records and the traffic roll-up move to the durable store ([78c69e4](https://github.com/Ikalus1988/MisakaNet/commit/78c69e42ab9dd1b6935d74865e628054efc440ba))
+* **worker:** the per-event records and the traffic roll-up move to the durable store ([#2118](https://github.com/Ikalus1988/MisakaNet/issues/2118), [#2120](https://github.com/Ikalus1988/MisakaNet/issues/2120)) ([d91871f](https://github.com/Ikalus1988/MisakaNet/commit/d91871f62dee03f337dfc19a13dda53d36cee6d2))
+* **worker:** the ranking's probe moves to the seam, and the keepalive counter to the store ([d95d2bf](https://github.com/Ikalus1988/MisakaNet/commit/d95d2bff926ad24a8ff16b2f6d59ec4c13f06aee))
+* **worker:** the search index and the upstream caches move to the durable store ([693eb33](https://github.com/Ikalus1988/MisakaNet/commit/693eb33c7b8d146c07a8ccb5384ff3a4123d8a71))
+* **worker:** the search index and the upstream caches move to the durable store ([#2116](https://github.com/Ikalus1988/MisakaNet/issues/2116)) ([5ca564d](https://github.com/Ikalus1988/MisakaNet/commit/5ca564d571a554b889e1acc75477d4077654d287))
+* **worker:** the trust field was dropped on the last hop — the row had it, the projection did not ([3674ab5](https://github.com/Ikalus1988/MisakaNet/commit/3674ab574484249cecd5281d3dafdf20dfbdbcf5))
+* **worker:** the trust field was dropped on the last hop — the row had it, the projection did not ([c7f689a](https://github.com/Ikalus1988/MisakaNet/commit/c7f689ad30fbe58130f1167d6bdd7cd978f92482))
+* **worker:** the unsolved map moves to the durable store — and the last KV enumeration moves with it ([57bdcc9](https://github.com/Ikalus1988/MisakaNet/commit/57bdcc992a53f7b95b307cf2a2c15c3f96828e75))
+* **worker:** the unsolved map moves to the durable store — and the last KV enumeration with it ([#2119](https://github.com/Ikalus1988/MisakaNet/issues/2119)) ([fb5487f](https://github.com/Ikalus1988/MisakaNet/commit/fb5487f6152319aea589bbdbdccc6b94e1a4493e))
+
+
+### Documentation
+
+* add Google Antigravity MCP integration recipe and field report ([#1948](https://github.com/Ikalus1988/MisakaNet/issues/1948)) ([89b7ef3](https://github.com/Ikalus1988/MisakaNet/commit/89b7ef37e01ea0e4376c511b428b809f4833362c))
+* add Google Antigravity MCP integration recipe and field report ([#1948](https://github.com/Ikalus1988/MisakaNet/issues/1948)) ([81e531b](https://github.com/Ikalus1988/MisakaNet/commit/81e531bf7ea32990116a544d3cbdf9182a1018aa))
+* automated writers land through a pull request that merges itself ([#2104](https://github.com/Ikalus1988/MisakaNet/issues/2104)) ([faec191](https://github.com/Ikalus1988/MisakaNet/commit/faec191209277db59822b3abe34c15722941fd2f))
+* **ci:** the diagnostics workflow is in the inventory — the gate that caught it ([9e22a3d](https://github.com/Ikalus1988/MisakaNet/commit/9e22a3d5da7f56234845aafdd5cc8a63616af33b))
+* **ci:** the register.yml exception names the issue that carries its evidence ([#2106](https://github.com/Ikalus1988/MisakaNet/issues/2106)) ([bf47d21](https://github.com/Ikalus1988/MisakaNet/commit/bf47d2147d77b98f8c285d876bfad09bc6501fdf))
+* **credentials:** 9109 means the token value changed, not that a permission is missing ([8c1f3d1](https://github.com/Ikalus1988/MisakaNet/commit/8c1f3d1a9f120bfe9f35a5908456cb27b7b778f4))
+* **credentials:** 9109 means the token value changed, not that a permission is missing ([16f0026](https://github.com/Ikalus1988/MisakaNet/commit/16f002622da191f4c5bd5d4326c76d5d6e696c66))
+* **credentials:** the npm publish token expires 2026-11-30, and npm will keep expiring it ([30ed47e](https://github.com/Ikalus1988/MisakaNet/commit/30ed47e8ef75b4e2411458e31c02195b27cf3dee))
+* **credentials:** the npm publish token expires 2026-11-30, and npm will keep expiring it ([bbb1a0d](https://github.com/Ikalus1988/MisakaNet/commit/bbb1a0d7ddb21157a3f1f87aa9c445d8ccc2bf5e))
+* **enterprise:** the anonymity path no longer has a 5-reads-a-day cap ([844c5d6](https://github.com/Ikalus1988/MisakaNet/commit/844c5d67864b2ebbbb2c27cfd1cad28c43bebd77))
+* fix 23 broken relative links and expand link gate to all docs ([#1946](https://github.com/Ikalus1988/MisakaNet/issues/1946)) ([97ab2a0](https://github.com/Ikalus1988/MisakaNet/commit/97ab2a045c2239ca14024ebb2050cb86afb4f362))
+* **install:** the landing page advertised the removed read cap too ([d883363](https://github.com/Ikalus1988/MisakaNet/commit/d883363dcece3176b41bb96e244018f4775c651a))
+* **intake:** make reproducible evidence a condition, not a request ([eb6519a](https://github.com/Ikalus1988/MisakaNet/commit/eb6519aa4acfacb0834b1a2bde072a6476b06889))
+* **intake:** make reproducible evidence a condition, not a request ([7c59c04](https://github.com/Ikalus1988/MisakaNet/commit/7c59c041c35140c5c271a9d905691ac04a622f67)), closes [#2041](https://github.com/Ikalus1988/MisakaNet/issues/2041)
+* **integrations:** the reader-facing FAQ still promised a 5-reads-a-day cap ([3e3c03c](https://github.com/Ikalus1988/MisakaNet/commit/3e3c03cd567dfdab6e7a0d44f697cbdc044ad5c9))
+* **maintainer:** a publishable state-of-the-repo ([#2044](https://github.com/Ikalus1988/MisakaNet/issues/2044)) ([79a04d0](https://github.com/Ikalus1988/MisakaNet/commit/79a04d096ce87fac4e2942be888a4b2667208249))
+* **maintainer:** a publishable state-of-the-repo ([#2044](https://github.com/Ikalus1988/MisakaNet/issues/2044)) ([ae61844](https://github.com/Ikalus1988/MisakaNet/commit/ae61844df239a50d8805ea4b96fd78e565d3c7cf))
+* **maintainer:** correct the two facts this document got wrong, and record the round ([11f283d](https://github.com/Ikalus1988/MisakaNet/commit/11f283d46fc19da104178b8586c23e3ed92672a4))
+* **maintainer:** correct the two facts this document got wrong, and record the round ([def0d36](https://github.com/Ikalus1988/MisakaNet/commit/def0d364641a8b2586217465c72ffa7e2be9258a))
+* **maintainer:** record this session in the state document, including what I got wrong ([959a293](https://github.com/Ikalus1988/MisakaNet/commit/959a2939d89acb316a63587e4839afe29aa359bd))
+* **maintainer:** record this session in the state document, including what I got wrong ([1b17d81](https://github.com/Ikalus1988/MisakaNet/commit/1b17d817fc503548dda177037823ce27c492fee2))
+* **maintainer:** the reproduce script no longer looks like a hardcoded secret ([dfa4152](https://github.com/Ikalus1988/MisakaNet/commit/dfa4152df405c1144713c1c0e96d85dedd8a7dce))
+* **roadmap:** give the current numbers a writer, and say who owns the STATUS generator ([493f285](https://github.com/Ikalus1988/MisakaNet/commit/493f285808beebee8b8a3aa7f72536d240a447f9))
+* **roadmap:** give the current numbers a writer, and say who owns the STATUS generator ([#2095](https://github.com/Ikalus1988/MisakaNet/issues/2095)) ([b65f377](https://github.com/Ikalus1988/MisakaNet/commit/b65f377d1e0b0aa962e71f67af8a9f0b1b49677b))
+* **roadmap:** milestone ② is live, not just locally green ([a39ba25](https://github.com/Ikalus1988/MisakaNet/commit/a39ba25d687267f3c0cfea1173f0e9e245e36f76))
+* **roadmap:** milestone ② is live, not just locally green ([8e5d4b8](https://github.com/Ikalus1988/MisakaNet/commit/8e5d4b806e6eebae5e1b9ff177b08dc1f307a5b3))
+* **security:** `client_id` is a key, so say so — and stop recommending a value that is public ([958523f](https://github.com/Ikalus1988/MisakaNet/commit/958523f721c6cbd93188bf6c938982b4a152f4a1))
+* **security:** `client_id` is a key, so say so — and stop recommending a value that is public ([#2083](https://github.com/Ikalus1988/MisakaNet/issues/2083)) ([beb50a2](https://github.com/Ikalus1988/MisakaNet/commit/beb50a2289ad758a708f622624dc462dc913b164))
+* **site:** registration copy stops selling registration as the way in ([979cb7b](https://github.com/Ikalus1988/MisakaNet/commit/979cb7bf7cedb4368e60d94a478dae9c88dd3040))
+* **site:** registration copy stops selling registration as the way in ([#2057](https://github.com/Ikalus1988/MisakaNet/issues/2057)) ([5b82860](https://github.com/Ikalus1988/MisakaNet/commit/5b82860518317c727c037c9fe321f1a48d91f8d7))
+* **state:** the ruleset's push rule, the two runs it killed, and the writers that moved to the self-merging PR ([0a0149a](https://github.com/Ikalus1988/MisakaNet/commit/0a0149a652dac24cc884ed37a390e99dee0f0b0d))
+* sweep the removed read cap out of the three surfaces that still promised it ([150f3da](https://github.com/Ikalus1988/MisakaNet/commit/150f3da194df7d6e879800768a9c7911017bca32))
+* the land mechanism was proven live, twice ([#2105](https://github.com/Ikalus1988/MisakaNet/issues/2105)) ([e6110fe](https://github.com/Ikalus1988/MisakaNet/commit/e6110fe6c4a492a851dde65e7e8ca2e9d7a27f4b))
+
+
+### Refactoring
+
+* **ci:** drop the lander's unused dry-run and check knobs ([1edd043](https://github.com/Ikalus1988/MisakaNet/commit/1edd043653ea24fb926ce5dbb19aa8e04b30913f))
+
+
+### Tests
+
+* **ci:** the converted workflows' lander calls are checked against the lander's own validators ([5e6404e](https://github.com/Ikalus1988/MisakaNet/commit/5e6404e1bf19d21e28aeb028f480cde8d7dd54e8))
+* **gates:** the row-id gate scans tracked files, not the filesystem ([3e8bbfc](https://github.com/Ikalus1988/MisakaNet/commit/3e8bbfcc7175fdcc98cca4ae518e583e0778f5a5))
+* **gates:** the row-id gate scans tracked files, not the filesystem ([#2057](https://github.com/Ikalus1988/MisakaNet/issues/2057) review finding) ([70fcb51](https://github.com/Ikalus1988/MisakaNet/commit/70fcb51036ca77d95a80b84ee4868b6d4a37de02))
+* **intake:** the [#1130](https://github.com/Ikalus1988/MisakaNet/issues/1130) receipt case, now that its lesson is on main ([3d339f9](https://github.com/Ikalus1988/MisakaNet/commit/3d339f99b27f810c390f929d77dbb992ef0577cc))
+* **intake:** the [#1130](https://github.com/Ikalus1988/MisakaNet/issues/1130) receipt case, now that its lesson is on main ([8bde87d](https://github.com/Ikalus1988/MisakaNet/commit/8bde87d2befe9296b840f6591b040a6d1876dbed))
+
+
+### CI/CD
+
+* **gates:** a weekly audit that proves the key gates can still fail ([#2045](https://github.com/Ikalus1988/MisakaNet/issues/2045)) ([#2054](https://github.com/Ikalus1988/MisakaNet/issues/2054)) ([f1ac783](https://github.com/Ikalus1988/MisakaNet/commit/f1ac783ff01068be1f5994d02d1e8033ae1bb030))
+* **gate:** the lesson gate now always reports, so it can be a required check ([#2039](https://github.com/Ikalus1988/MisakaNet/issues/2039)) ([95bd6d8](https://github.com/Ikalus1988/MisakaNet/commit/95bd6d84352c93855a964fc09d8beeff5791887b)), closes [#1920](https://github.com/Ikalus1988/MisakaNet/issues/1920)
+* make the red mean something — a flaky leg with headroom, and an action alias that follows versions ([1e1de1d](https://github.com/Ikalus1988/MisakaNet/commit/1e1de1d7e61cb1df52c3a1df0b8edca6f2aaaee2))
+* make the red mean something — a flaky leg with headroom, and an action alias that follows versions ([e4e8ce2](https://github.com/Ikalus1988/MisakaNet/commit/e4e8ce24e9c96570a47c5055ade0631c4da37c6b))
+* **publish:** the version record goes through a PR, because main refuses direct pushes ([787d52b](https://github.com/Ikalus1988/MisakaNet/commit/787d52b73d2084b065f175ede4cd0927b0df2081))
+* **publish:** the version record goes through a PR, because main refuses direct pushes ([15dafd2](https://github.com/Ikalus1988/MisakaNet/commit/15dafd256e23857fd7b2634a552c1a7bb6b3dc17))
+
 ## [2.34.0](https://github.com/Ikalus1988/MisakaNet/compare/v2.33.0...v2.34.0) (2026-09-21)
 
 
